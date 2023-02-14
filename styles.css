@@ -39,6 +39,10 @@ table {
   table-layout: fixed;
 }
 
+textarea {
+  resize: none;
+}
+
 .display-box {
   font-family: "Orbitron", sans-serif;
   background-color: lightgray;
