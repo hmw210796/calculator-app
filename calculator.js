@@ -61,10 +61,19 @@ document.addEventListener("keydown", (event) => {
 
 document.addEventListener("keyup", (event) => {
   keyText = event.key;
-  for (item of buttons) {
-    if (item.textContent === keyText) {
-      item.style.background = "";
+  if (
+    keyText == "+" ||
+    keyText == "-" ||
+    keyText == "*" ||
+    keyText == "/" ||
+    keyText == "." ||
+    (keyText < 10 && keyText >= 0)
+  ) {
+    for (item of buttons) {
+      if (item.textContent === keyText) {
+        item.style.background = "";
+      }
     }
+    equalBtn.style.background = "";
   }
-  equalBtn.style.background = "";
 });
