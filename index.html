@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <table class="calculator">
+        <tr>
+            <td colspan="3">
+                <div id="result" class="display-box" data-previous-result disabled></div>
+            </td>
+            <td><button id="clearBtn" data-clear>C</button></td>
+        </tr>
+        <tr>
+            <td><button data-number>1</button></td>
+            <td><button data-number>2</button></td>
+            <td><button data-number>3</button></td>
+            <td><button data-operator>/</button></td>
+        </tr>
+        <tr>
+            <td><button data-number>4</button></td>
+            <td><button data-number>5</button></td>
+            <td><button data-number>6</button></td>
+            <td><button data-operator>-</button></td>
+        </tr>
+        <tr>
+            <td><button data-number>7</button></td>
+            <td><button data-number>8</button></td>
+            <td><button data-number>9</button></td>
+            <td><button data-operator>+</button></td>
+        </tr>
+        <tr>
+            <td><button data-number>.</button></td>
+            <td><button data-number>0</button></td>
+            <td><button data-equal>=</button></td>
+            <td><button data-operator>*</button></td>
+        </tr>
+
+    </table>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
